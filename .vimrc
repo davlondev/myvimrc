@@ -23,9 +23,12 @@ set number
 set hlsearch
 set nowrap
 set noswapfile
+set autoindent
 
 colorscheme peachpuff
 "colorscheme sonokai
 highlight Comment ctermfg=green
 
 hi Pmenu ctermbg=black ctermfg=Gray
+hi StatusLine ctermbg=Black ctermfg=Gray
+hi StatusLineNC ctermbg=Black ctermfg=DarkGray
