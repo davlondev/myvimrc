@@ -13,6 +13,7 @@ let g:NERDTreeMinimalUI = v:true
 map <silent> <C-n> :NERDTreeToggle<CR>
 nnoremap zz :w<cr>
 autocmd FileType python nnoremap ;; :!python3 %<cr>
+autocmd FileType go nnoremap ;; :GoRun<cr>
 
 set number
 set tabstop=2
