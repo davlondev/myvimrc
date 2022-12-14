@@ -1,5 +1,7 @@
 
 
+export PATH=$PATH:/usr/local/go/bin
+
 
 export PROMPT="%F{green}dav%f [%F{#327aed}%~%f] %F{red}$%f "
 
@@ -21,8 +23,10 @@ set keymap vi-insert
 
 
 alias tt="Tree -L 1"
+alias tta="tt -a"
 alias lsa="ls -a"
 alias bb="cd .."
 
 
-alias doml="cd ~/dev/doml"
+alias doml="cd ~/dev/doml && conda activate doml"
+
