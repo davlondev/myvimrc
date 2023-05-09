@@ -29,4 +29,5 @@ alias bb="cd .."
 
 
 alias doml="cd ~/dev/doml && conda activate doml"
-
+alias dopy="cd ~/dev/doml/other && conda activate doml"
+alias jn="jupyter notebook"
