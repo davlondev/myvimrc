@@ -23,3 +23,13 @@ alias bb="cd .."
 #alias dopy="cd ~/dev/doml/other && conda activate doml"
 alias mlenv="cd ~/dev/doml && source mlenv/bin/activate"
 
+
+alias jl="cd ~/dev/ai-notebooks && python3 -m jupyterlab --no-browser --port=8080"
+
+alias doml="cd ~/dev/ai-notebooks"
+
+eval `ssh-agent`
+ssh-add
+ssh-add ~/.ssh/github-key 2>/dev/null
+
+
