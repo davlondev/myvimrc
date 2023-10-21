@@ -31,24 +31,26 @@ alias bb="cd .."
 #alias dopy="cd ~/dev/doml/other && conda activate doml"
 alias jn="jupyter notebook"
 alias jl="jupyter lab"
+
+alias doml="cd ~/dev/doml && conda activate doml"
 alias mlenv="cd ~/dev/doml && source mlenv/bin/activate"
+
 
 alias ghidra="~/Downloads/ghidra/ghidraRun"
 
+
 alias brainfm="open https://brain.fm"
+
 alias apps="open /Applications/"
 
 alias candy="cd ~/dev/candy2d"
 
 
-alias doml="cd ~/dev/doml && conda activate doml"
-: 'doml() {
-  ff="$1"
 
-  conda activate doml
-  if [ $# -eq 0 ]; then
-      cd ~/dev/doml
-  else
-    cd ff
-  fi
-} '
+alias sshdoml="echo Started at http://localhost:8080/lab && open http://localhost:8080/lab/ && ssh -N -L localhost:8080:localhost:8080 -i ~/.ssh/da-rig-key dav@da-rig.local"
+# alias sshdoml="ssh -N -L localhost:8080:localhost:8080 -i ~/.ssh/da-rig-key dav@da-rig.local && echo 'Started at https://localhost:8080/lab' && sleep 2 && open 'https://localhost:8080/lab/'"
+# alias sshdoml="(ssh -N -L localhost:8080:localhost:8080 -i ~/.ssh/da-rig-key dav@da-rig.local &); echo 'Started at https://localhost:8080/lab'; sleep 2; open 'https://localhost:8080/lab/'"
+
+
+
+alias darig="ssh -i ~/.ssh/da-rig-key dav@da-rig.local"
